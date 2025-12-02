@@ -1,0 +1,84 @@
+.add {
+    width: 70%;
+    margin: 50px auto 0 max(5vw, 25px);
+    color: #4a4a4a;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Image Upload */
+.add-img-upload img {
+    width: 120px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Product Name and Description */
+.add-product-name,
+.add-product-description {
+    width: max(40%, 280px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: vertical;
+}
+
+/* Category and Price */
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Select and input inside category/price section */
+.add-category-price select,
+.add-category-price input {
+    max-width: 140px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Button Wrapper */
+.add-button-wrapper {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* Add Button */
+.add-button {
+    padding: 14px 30px;
+    width: max(200px, 40%);
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.add-button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
